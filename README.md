@@ -5,7 +5,7 @@ This is private company assigment related with golang position
 ###  package zap
 
 A Logger provides fast, leveled, structured logging. All methods are safe
-for concurrent use.
+for concurrent use. [The documentation for the Logger type](https://pkg.go.dev/go.uber.org/zap#Logger)
 
 The Logger is designed for contexts in which every microsecond and every
 allocation matters, so its API intentionally favors performance and type
@@ -71,7 +71,7 @@ type SugaredLogger struct {
 
 ### package retryablehttp
 
-LeveledLogger is an interface that can be implemented by any logger or a
+[LeveledLogger](github.com/hashicorp/go-retryablehttp) is an interface that can be implemented by any logger or a
 logger wrapper to provide leveled logging. The methods accept a message
 string and a variadic number of key-value pairs. For log.Printf style
 formatting where message string contains a format specifier, use Logger
